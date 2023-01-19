@@ -1,5 +1,5 @@
 -- Various Commands to be executed at the end
-vim.cmd("colorscheme bluloco-dark")
+vim.cmd("colorscheme doom-one")
 vim.cmd("highlight LineNr guibg=NONE")
 vim.cmd("highlight VertSplit guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")

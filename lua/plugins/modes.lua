@@ -5,7 +5,7 @@ return {
 	config = function() 
 		require('modes').setup({
 			-- set opacity for cursorline and number background
-			line_opacity = 0.10,
+			line_opacity = 0.24,
 
 			-- Enable cursor highlights
 			set_cursor = true,

@@ -1,40 +1,53 @@
 return {
     "goolord/alpha-nvim",
+	 lazy = false,
     event = "VimEnter",
+	 priority = 800,
     opts = function()
       local dashboard = require("alpha.themes.dashboard")
       local logo = [[
- ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗
- ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║
- ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║
- ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║
- ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║
- ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝
+██████   █████                   █████   █████  ███                  
+░░██████ ░░███                   ░░███   ░░███  ░░░                   
+░███░███ ░███   ██████   ██████  ░███    ░███  ████  █████████████   
+░███░░███░███  ███░░███ ███░░███ ░███    ░███ ░░███ ░░███░░███░░███  
+░███ ░░██████ ░███████ ░███ ░███ ░░███   ███   ░███  ░███ ░███ ░███  
+░███  ░░█████ ░███░░░  ░███ ░███  ░░░█████░    ░███  ░███ ░███ ░███  
+█████  ░░█████░░██████ ░░██████     ░░███      █████ █████░███ █████ 
+░░░░░    ░░░░░  ░░░░░░   ░░░░░░       ░░░      ░░░░░ ░░░░░ ░░░ ░░░░░  
 		]]
       dashboard.section.header.val = vim.split(logo, "\n")
       dashboard.section.buttons.val = {
-        dashboard.button("f", " " .. " Find file", ":Telescope find_files <CR>"),
-        dashboard.button("F", "󰘓 " .. " Find hidden files", ":Telescope find_files follow=true no_ignore=true hidden=true<CR>"),
-        dashboard.button("n", " " .. " New file", ":ene <BAR> startinsert <CR>"),
-        dashboard.button("r", " " .. " Recent files", ":Telescope oldfiles <CR>"),
-        dashboard.button("g", " " .. " Find text", ":Telescope live_grep <CR>"),
+        dashboard.button("f", " " .. " Find File", ":Telescope find_files <CR>"),
+        dashboard.button("F", " " .. " Find Hidden Files", ":Telescope find_files follow=true no_ignore=true hidden=true<CR>"),
+        dashboard.button("n", " " .. " New File", ":ene <BAR> startinsert <CR>"),
+        dashboard.button("r", " " .. " Recent Files", ":Telescope oldfiles <CR>"),
+        dashboard.button("g", " " .. " Find Text (Grep)", ":Telescope live_grep <CR>"),
         dashboard.button("t", " " .. " Open NeoTree", ":Neotree <CR>"),
         dashboard.button("s", "勒" .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
         dashboard.button("l", "鈴" .. " Lazy", ":Lazy<CR>"),
         dashboard.button("q", " " .. " Quit", ":qa<CR>"),
       }
+		local function pick_color()
+			local colors = {"String", "Identifier", "Keyword", "Number", "Class", "Constant", "Conditional", "Function"}
+			return colors[math.random(#colors)]
+		end
+
       for _, button in ipairs(dashboard.section.buttons.val) do
-        button.opts.hl = "AlphaButtons"
-        button.opts.hl_shortcut = "AlphaShortcut"
+        button.opts.hl = pick_color()
+        button.opts.hl_shortcut = pick_color()
       end
-      dashboard.section.footer.opts.hl = "Type"
-      dashboard.section.header.opts.hl = "AlphaHeader"
-      dashboard.section.buttons.opts.hl = "AlphaButtons"
-      dashboard.opts.layout[1].val = 8
+      dashboard.section.footer.opts.hl = pick_color()
+      dashboard.section.header.opts.padding = 12
+      dashboard.section.header.opts.hl = pick_color()
+      dashboard.section.buttons.opts.hl = pick_color()
+		local marginTopPercent = 0.15
+		local headerPadding = vim.fn.max({2, vim.fn.floor(vim.fn.winheight(0) * marginTopPercent) })
+      dashboard.opts.layout[1].val = headerPadding
       return dashboard
     end,
     config = function(_, dashboard)
       vim.b.miniindentscope_disable = true
+		math.randomseed(os.time())
 
       -- close Lazy and re-open when the dashboard is ready
       if vim.o.filetype == "lazy" then
@@ -54,7 +67,7 @@ return {
         callback = function()
           local stats = require("lazy").stats()
           local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-          dashboard.section.footer.val = "⚡ Neovim loaded " .. stats.count .. " plugins in " .. ms .. "ms"
+          dashboard.section.footer.val = "⚡ Neovim Loaded " .. stats.count .. " Plugins in " .. ms .. "ms  ⚡"
           pcall(vim.cmd.AlphaRedraw)
         end,
       })
