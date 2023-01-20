@@ -2,7 +2,7 @@ return {
 	"nvim-neo-tree/neo-tree.nvim",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
-		"nvim-tree/nvim-web-devicons", -- not strictly required, but recommended
+		"nvim-tree/nvim-web-devicons",
 		"MunifTanjim/nui.nvim",
 	},
 	branch = "v2.x",
@@ -11,7 +11,7 @@ return {
 		require("neo-tree").setup({
 			window = {
 				position = "left",
-				width = 38,
+				width = 37,
 			},
 			git_status = {
 				symbols = {

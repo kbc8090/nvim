@@ -9,10 +9,10 @@ return {
 			defaults = {
 				sorting_strategy = 'ascending',
 				layout_config = {
-					prompt_position = 'bottom'
+					prompt_position = 'top'
 				},
 				prompt_prefix = " ",
-				selection_caret = " "
+				selection_caret = "➤ "
 			}
 		})
 	end
