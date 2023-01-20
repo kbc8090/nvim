@@ -1,5 +1,5 @@
 return {
 	'luisiacc/gruvbox-baby',
-	lazy = true,
+	lazy = false,
 	priority = 1000,
 }
