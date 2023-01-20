@@ -1,6 +1,6 @@
 return {
 	'stevearc/dressing.nvim',
-	cond = false,
+	cond = true,
 	config = function() 
 		require('dressing').setup({
 			input = {
