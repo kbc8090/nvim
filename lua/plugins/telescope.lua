@@ -3,7 +3,7 @@ return {
 	lazy = false,
 	tag = '0.1.1',
 	cmd = "Telescope",
-	dependencies = {"nvim-lua/plenary.nvim"},
+	dependencies = "nvim-lua/plenary.nvim",
 	config = function()
 		require("telescope").setup({
 			defaults = {
@@ -12,7 +12,7 @@ return {
 					prompt_position = 'top'
 				},
 				prompt_prefix = " ",
-				selection_caret = "➤ "
+				selection_caret = " "
 			}
 		})
 	end
