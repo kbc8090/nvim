@@ -4,7 +4,7 @@ vim.cmd("highlight LineNr guibg=NONE")
 vim.cmd("highlight VertSplit guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")
 vim.cmd("highlight CursorLineNr gui=bold")
-vim.cmd("highlight Normal guibg=NONE")
+-- vim.cmd("highlight Normal guibg=NONE")
 --vim.cmd("highlight clear CursorLine")
 
 -- Set cursor back to Beam when exiting Neovim
