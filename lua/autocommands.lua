@@ -1,6 +1,6 @@
 -- Various Commands to be executed at the end
 
-vim.cmd("colorscheme tokyonight")
+vim.cmd("colorscheme base16-material-palenight")
 vim.cmd("highlight LineNr guibg=NONE")
 vim.cmd("highlight VertSplit guibg=NONE")
 vim.cmd("highlight SignColumn guibg=NONE")

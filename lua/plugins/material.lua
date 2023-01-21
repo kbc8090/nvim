@@ -65,6 +65,6 @@ return {
 
 	custom_highlights = {}, -- Overwrite highlights with your own
 })
-vim.g.material_style = "oceanic"
+vim.g.material_style = "palenight"
 	end
 }
