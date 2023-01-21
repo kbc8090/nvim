@@ -13,6 +13,6 @@ return {
 			context_char = "▏",
 			show_current_context_start = false,
 			show_current_context = true,
-	}
-end
+		}
+	end
 }
