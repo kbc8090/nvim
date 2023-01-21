@@ -1,3 +1,4 @@
 return {
-    "psliwka/vim-smoothie"
+    "psliwka/vim-smoothie",
+	 cond = true
 }

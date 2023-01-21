@@ -1,5 +1,6 @@
 return {
 	'edluffy/specs.nvim',
+	cond = false,
 	config = function()
 		require('specs').setup{ 
 			show_jumps  = true,
