@@ -1,8 +1,0 @@
-return {
-	"melkster/modicator.nvim",
-	lazy = false,
-	priority = 113,
-	config = function()
-		require('modicator').setup()
-	end
-}

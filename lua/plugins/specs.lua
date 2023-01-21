@@ -7,7 +7,7 @@ return {
 			popup = {
 				delay_ms = 0, -- delay before popup displays
 				inc_ms = 10, -- time increments used for fade/resize effects 
-				blend = 40, -- starting blend, between 0-100 (fully transparent), see :h winblend
+				blend = 41, -- starting blend, between 0-100 (fully transparent), see :h winblend
 				width = 14,
 				winhl = "PMenu",
 				fader = require('specs').linear_fader,

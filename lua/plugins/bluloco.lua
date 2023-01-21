@@ -1,7 +1,7 @@
 return {
 	'uloco/bluloco.nvim',
 	dependencies = { 'rktjmp/lush.nvim'},
-	lazy = true,
+	lazy = false,
 	priority = 900,
 	config = function()
 		require("lualine").setup({
