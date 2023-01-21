@@ -18,11 +18,11 @@ return {
 				timing = animate.gen_timing.exponential({ ease = "in-out", duration = 200, unit = "total" }),
 			},
 			open = {
-				enable = true,
+				enable = false,
 				timing = animate.gen_timing.exponential({ ease = "in-out", duration = 240, unit = "total" }),
 			},
 			close = {
-				enable = true,
+				enable = false,
 				timing = animate.gen_timing.exponential({ ease = "in-out", duration = 240, unit = "total" }),
 			},
 		})
