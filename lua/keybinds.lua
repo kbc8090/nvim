@@ -4,7 +4,7 @@ table.insert(prefix_list, {"n", "<Space>"})
 local bind = vim.keymap.set
 
 bind('n', '<leader>w', '<CMD>w<CR>', { desc = "Write File" })
-bind('n', '<leader>q', '<CMD>q!<CR>', { desc = "Quit" })
+bind('n', '<leader>q', '<CMD>q<CR>', { desc = "Quit" })
 bind('n', 'cw', 'ciw')
 bind('n', '<M-j>', '<CMD>vertical resize-5<CR>', { desc = "Decrease Size of Vertical Split" })
 bind('n', '<M-k>', '<CMD>vertical resize+5<CR>', { desc = "Increase Size of Vertical Split" })
