@@ -1,10 +1,10 @@
 -- Various Commands to be executed at the end
 
-vim.cmd("colorscheme base16-material-palenight")
-vim.cmd("highlight LineNr guibg=NONE")
-vim.cmd("highlight VertSplit guibg=NONE")
-vim.cmd("highlight SignColumn guibg=NONE")
-
+vim.cmd("colorscheme one_monokai")
+-- vim.cmd("highlight LineNr guibg=NONE")
+-- vim.cmd("highlight VertSplit guibg=NONE")
+-- vim.cmd("highlight SignColumn guibg=NONE")
+-- vim.api.nvim_set_hl(0, '', { })
 local cursorline_fg = vim.api.nvim_get_hl_by_name("Constant", true)
 vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = cursorline_fg.foreground, bold = true })
 --vim.cmd("highlight Normal guibg=NONE")

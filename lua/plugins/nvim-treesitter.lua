@@ -11,7 +11,10 @@ return {
 			highlight = {
 				enable = true,
 				disable = { "help" }
-			}
+			},
+			rainbow = {
+				enable = true,
+			},
 		})
 
 		-- Override default folding options.
