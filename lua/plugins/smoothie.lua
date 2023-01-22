@@ -1,4 +1,6 @@
 return {
     "psliwka/vim-smoothie",
-	 cond = true
+	 cond = true,
+	 lazy = true,
+	 event = "VeryLazy"
 }

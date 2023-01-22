@@ -21,12 +21,6 @@ return {
 				cursorline = false, -- Disable the cursorline
 				eob_lines = true, -- Hide the end-of-buffer lines
 			},
-			-- Inverse highlight for different groups
-			inverse = {
-				match_paren = false,
-			},
-			custom_highlights = {}, -- Overwrite default highlight groups
-			custom_colors = {}, -- Overwrite default colors
 		})
 		--vim.cmd("colorscheme onenord")
 	end
