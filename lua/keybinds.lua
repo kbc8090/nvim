@@ -21,11 +21,11 @@ bind('n', '<leader>dt', '<CMD>Gitsigns diffthis<CR>', { desc = "Gitsigns Next Hu
 -- Telescope Plugin
 -------------------------------------------------------------------------------
 local telescope_leader = vim.g.mapleader.."f"
-table.insert(prefix_list, {"n", "<Space>t", {desc="Telescope"}})
+table.insert(prefix_list, {"n", "<Space>t", { desc = "Telescope" }})
 
-bind("", telescope_leader.."/", "<CMD>Telescope current_buffer_fuzzy_find<CR>", {desc = "Search Current Buffer"})
-bind("", telescope_leader.."f", "<CMD>Telescope find_files<CR>", {desc = "Find Files"})
-bind("", telescope_leader.."F", "<CMD>Telescope find_files follow=true no_ignore=true hidden=true<CR>", {desc = "Find All Files"})
-bind("", telescope_leader.."l", "<CMD>Telescope live_grep<CR>", {desc = "Live Grep Files"})
-bind("", telescope_leader.."r", "<CMD>Telescope oldfiles<CR>", {desc = "Find Recent Files"})
-bind("", telescope_leader.."t", "<CMD>Telescope<CR>", {desc = "All Telescope Options"})
+bind("", telescope_leader.."/", "<CMD>Telescope current_buffer_fuzzy_find<CR>", { desc = "Search Current Buffer" })
+bind("", telescope_leader.."f", "<CMD>Telescope find_files<CR>", { desc = "Find Files" })
+bind("", telescope_leader.."F", "<CMD>Telescope find_files follow=true no_ignore=true hidden=true<CR>", { desc = "Find All Files" })
+bind("", telescope_leader.."l", "<CMD>Telescope live_grep<CR>", { desc = "Live Grep Files" })
+bind("", telescope_leader.."r", "<CMD>Telescope oldfiles<CR>", { desc = "Find Recent Files" })
+bind("", telescope_leader.."t", "<CMD>Telescope<CR>", { desc = "All Telescope Options" })

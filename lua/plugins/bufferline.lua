@@ -13,6 +13,15 @@ return {
 				buffer_close_icon = "",
 				close_icon = "",
 				-- color_icons = false,
+				offsets = {
+					{
+						filetype = "neo-tree",
+						text = "Explorer",
+						text_align = "center",
+						highlight = "Constant",
+						separator = true,
+					}
+				},
 			}
 		})
 	end
