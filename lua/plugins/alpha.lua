@@ -37,7 +37,7 @@ return {
 			button.opts.hl_shortcut = pick_color()
 		end
 		dashboard.section.footer.opts.hl = pick_color()
-		dashboard.section.header.opts.padding = 12
+		-- dashboard.section.header.opts.padding = 10
 		dashboard.section.header.opts.hl = pick_color()
 		dashboard.section.buttons.opts.hl = pick_color()
 		local marginTopPercent = 0.15
@@ -69,8 +69,8 @@ return {
 			callback = function()
 				local stats = require("lazy").stats()
 				local ms = (math.floor(stats.startuptime * 100 + 0.5) / 100)
-				dashboard.section.footer.val = "«———————————————————————————————————————————»\n ⚡ Neovim Loaded " .. stats.count .. " Plugins in " .. ms .. "ms  ⚡"
-				pcall(vim.cmd.AlphaRedraw)
+				dashboard.section.footer.val = "=============================================\n ⚡ Neovim Loaded " .. stats.count .. " Plugins in " .. ms .. "ms "
+				-- pcall(vim.cmd.AlphaRedraw)
 			end,
 		})
 	end,

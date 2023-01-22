@@ -19,6 +19,14 @@ au ExitPre * :set guicursor=a:ver20
 augroup END	
 ]]
 
+vim.cmd
+[[
+augroup vertical_help
+au!
+au FileType help wincmd L
+augroup END
+]]
+
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
 	callback = function()
