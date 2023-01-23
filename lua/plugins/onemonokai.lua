@@ -1,5 +1,5 @@
 return {
-	"cpea2506/one_monokai.nvim",
-	lazy = false,
-	priority = 1000
+  "cpea2506/one_monokai.nvim",
+  lazy = false,
+  priority = 1000
 }

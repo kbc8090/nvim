@@ -1,4 +1,4 @@
 return {
-	'RRethy/nvim-base16',
-	lazy = false
+  'RRethy/nvim-base16',
+  lazy = false
 }

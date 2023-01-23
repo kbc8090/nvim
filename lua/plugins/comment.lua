@@ -1,8 +1,8 @@
 return {
-	"numToStr/Comment.nvim",
-	lazy = false,
-	event = "VeryLazy",
-	config = function ()
-		require('Comment').setup()
-	end
+  "numToStr/Comment.nvim",
+  lazy = false,
+  event = "VeryLazy",
+  config = function ()
+    require('Comment').setup()
+  end
 }

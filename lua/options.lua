@@ -23,7 +23,6 @@ o.mouse = 'a'
 o.termguicolors = true
 o.updatetime = 100
 o.splitright = true
--- o.signcolumn = "yes"
 o.splitbelow = true
 o.number = true
 o.wildmode = "longest:full,full"
@@ -38,6 +37,7 @@ o.clipboard = "unnamedplus"
 o.highlighturl_enabled = true
 o.showmode = false
 o.numberwidth = 3
+-- o.signcolumn = "yes"
 --vim.opt.statuscolumn = "%=%{v:virtnum < 1 ? (v:relnum ? v:relnum : v:lnum < 10 ? v:lnum . '  ' : v:lnum) : ''}%=%s"
 
 vim.opt.fillchars = { eob = " " }
