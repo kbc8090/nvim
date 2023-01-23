@@ -1,6 +1,7 @@
 return {
 	"xiyaowong/nvim-transparent",
 	lazy = false,
+   priority = 900,
 	config = function()
 		require("transparent").setup({
 			enable = true, -- boolean: enable transparent
@@ -12,6 +13,7 @@ return {
 			"BufferLineFill",
 			"BufferLineBackground",
 			"BufferLineSeparator",
+         "BufferLineTabSeparator",
 			"BufferLineIndicatorSelected",
 		},
 		exclude = {}, -- table: groups you don't want to clear

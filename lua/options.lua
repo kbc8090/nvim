@@ -21,6 +21,7 @@ o.cursorline = true
 o.title = true
 o.mouse = 'a'
 o.termguicolors = true
+o.updatetime = 100
 o.splitright = true
 -- o.signcolumn = "yes"
 o.splitbelow = true
