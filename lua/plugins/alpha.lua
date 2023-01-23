@@ -46,7 +46,7 @@ return {
     return dashboard
   end,
   config = function(_, dashboard)
-    vim.b.miniindentscope_disable = true
+    -- vim.b.miniindentscope_disable = true
     math.randomseed(os.time())
 
     -- close Lazy and re-open when the dashboard is ready

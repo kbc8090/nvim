@@ -18,6 +18,14 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
   end,
 })
 
+-- Ignore mini-indentscope on alpha window if not lazy loaded
+vim.api.nvim_create_autocmd({ "FileType" }, {
+  pattern = "alpha",
+  callback = function()
+    vim.cmd.wincmd('L')
+    vim.b.miniindentscope_disable = true
+  end,
+})
 -- Highlight on yank
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   callback = function()
