@@ -1,6 +1,6 @@
 return {
   "NvChad/nvim-colorizer.lua",
-  lazy = true,
+  lazy = false,
   -- event = "VeryLazy",
   config = function()
     require('colorizer').setup({

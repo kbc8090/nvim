@@ -17,6 +17,7 @@ return {
       rainbow = {
         enable = true,
       },
+      -- markid = { enable = true }
     })
 
     -- Override default folding options.
