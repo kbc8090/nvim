@@ -22,7 +22,6 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
 vim.api.nvim_create_autocmd({ "FileType" }, {
   pattern = "alpha",
   callback = function()
-    vim.cmd.wincmd('L')
     vim.b.miniindentscope_disable = true
   end,
 })
