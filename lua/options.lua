@@ -37,9 +37,11 @@ o.swapfile = false
 o.clipboard = "unnamedplus"
 o.highlighturl_enabled = true
 o.showmode = false
+o.numberwidth = 3
+--vim.opt.statuscolumn = "%=%{v:virtnum < 1 ? (v:relnum ? v:relnum : v:lnum < 10 ? v:lnum . '  ' : v:lnum) : ''}%=%s"
+
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
-
 
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1

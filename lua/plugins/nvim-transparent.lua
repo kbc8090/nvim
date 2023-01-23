@@ -15,6 +15,8 @@ return {
 			"BufferLineSeparator",
          "BufferLineTabSeparator",
 			"BufferLineIndicatorSelected",
+         "NormalFloat",
+         "VertSplit",
 		},
 		exclude = {}, -- table: groups you don't want to clear
 	})

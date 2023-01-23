@@ -1,31 +1,22 @@
 -- Set CursorLineNR to a visible color
-
 local cursorline_fg = vim.api.nvim_get_hl_by_name("Constant", true)
 vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = cursorline_fg.foreground, bold = true })
 
---vim.cmd("highlight Normal guibg=NONE")
---vim.cmd("highlight clear CursorLine")
---vim.cmd("highlight LineNr guibg=NONE")
---vim.cmd("highlight VertSplit guibg=NONE")
---vim.cmd("highlight SignColumn guibg=NONE")
---vim.api.nvim_set_hl(0, '', { })
-
 -- Set cursor back to Beam when exiting Neovim
-vim.cmd
-[[
-augroup change_cursor
-au!
-au ExitPre * :set guicursor=a:ver20
-augroup END	
-]]
+vim.api.nvim_create_autocmd("ExitPre", {
+  pattern = "*",
+  callback = function()
+    vim.cmd.set('guicursor=a:ver20')
+  end,
+})
 
-vim.cmd
-[[
-augroup vertical_help
-au!
-au FileType help wincmd L
-augroup END
-]]
+-- Spawn help window in vertical split
+vim.api.nvim_create_autocmd("FileType", {
+  pattern = "help",
+  callback = function()
+    vim.cmd.wincmd('L')
+  end,
+})
 
 -- Highlight on yank
 vim.api.nvim_create_autocmd("TextYankPost", {
