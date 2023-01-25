@@ -61,9 +61,9 @@ return {
     end
 
     require("alpha").setup(dashboard.opts)
-    vim.cmd([[
-    autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
-    ]])
+    -- vim.cmd([[
+    -- autocmd User AlphaReady set showtabline=0 | autocmd BufUnload <buffer> set showtabline=2
+    -- ]])
     vim.api.nvim_create_autocmd("User", {
       pattern = "LazyVimStarted",
       callback = function()

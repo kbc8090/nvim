@@ -1,7 +1,7 @@
 return {
   'rmehri01/onenord.nvim',
-  lazy = false,
-  priority = 1000,
+  -- lazy = false,
+  -- priority = 1000,
   config = function()
     require('onenord').setup({
       theme = "dark", -- "dark" or "light". Alternatively, remove the option and set vim.o.background instead
@@ -22,6 +22,5 @@ return {
         eob_lines = true, -- Hide the end-of-buffer lines
       },
     })
-    --vim.cmd("colorscheme onenord")
   end
 }
