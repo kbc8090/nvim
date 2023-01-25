@@ -17,6 +17,7 @@ return {
       "BufferLineIndicatorSelected",
       "NormalFloat",
       "VertSplit",
+      "WhichKeyFloat",
     },
     exclude = {}, -- table: groups you don't want to clear
   })
