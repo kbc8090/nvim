@@ -3,7 +3,7 @@ return {
   lazy = true,
   cond = true,
   event = "VimEnter",
-  priority = 800,
+  priority = 900,
   opts = function()
     local dashboard = require("alpha.themes.dashboard")
     local logo = [[

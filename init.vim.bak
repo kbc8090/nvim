@@ -13,33 +13,33 @@ set termguicolors
 
 call plug#begin('~/.local/share/nvim/plugged')
 
-	Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
-	Plug 'drewtempelmeyer/palenight.vim'
-	Plug 'dracula/vim', { 'as': 'dracula' }
-	Plug 'itchyny/lightline.vim'
-	Plug 'mhinz/vim-startify'
-	Plug 'ryanoasis/vim-devicons'
-	Plug 'norcalli/nvim-colorizer.lua'
-	Plug 'luochen1990/rainbow'
-	"Plug 'vim-airline/vim-airline'
-	"Plug 'vim-airline/vim-airline-themes'
-	Plug 'connorholyday/vim-snazzy'
-	Plug 'morhetz/gruvbox'
-	Plug 'ajmwagar/vim-deus'
-	Plug 'patstockwell/vim-monokai-tasty'
-	Plug 'preservim/nerdtree'
-	Plug 'joshdick/onedark.vim'
-	Plug 'kaicataldo/material.vim'
-	Plug 'justinmk/vim-syntax-extra'
-	Plug 'ayu-theme/ayu-vim'
-	Plug 'sheerun/vim-polyglot'
-	Plug 'arcticicestudio/nord-vim'
-	Plug 'liuchengxu/space-vim-dark'
-	Plug 'yegappan/mru'
-	Plug 'ghifarit53/tokyonight-vim'
-	"Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
-	"Plug 'nvim-tree/nvim-web-devicons'
-	"Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
+Plug 'catppuccin/nvim', { 'as': 'catppuccin' }
+Plug 'drewtempelmeyer/palenight.vim'
+Plug 'dracula/vim', { 'as': 'dracula' }
+Plug 'itchyny/lightline.vim'
+Plug 'mhinz/vim-startify'
+Plug 'ryanoasis/vim-devicons'
+Plug 'norcalli/nvim-colorizer.lua'
+Plug 'luochen1990/rainbow'
+"Plug 'vim-airline/vim-airline'
+"Plug 'vim-airline/vim-airline-themes'
+Plug 'connorholyday/vim-snazzy'
+Plug 'morhetz/gruvbox'
+Plug 'ajmwagar/vim-deus'
+Plug 'patstockwell/vim-monokai-tasty'
+Plug 'preservim/nerdtree'
+Plug 'joshdick/onedark.vim'
+Plug 'kaicataldo/material.vim'
+Plug 'justinmk/vim-syntax-extra'
+Plug 'ayu-theme/ayu-vim'
+Plug 'sheerun/vim-polyglot'
+Plug 'arcticicestudio/nord-vim'
+Plug 'liuchengxu/space-vim-dark'
+Plug 'yegappan/mru'
+Plug 'ghifarit53/tokyonight-vim'
+"Plug 'rmehri01/onenord.nvim', { 'branch': 'main' }
+"Plug 'nvim-tree/nvim-web-devicons'
+"Plug 'akinsho/bufferline.nvim', { 'tag': 'v3.*' }
 
 call plug#end()
 
@@ -109,29 +109,29 @@ nnoremap <silent> <F9> :NERDTreeToggle<CR>
 
 autocmd! BufEnter * call ToggleCursorLine()
 function! ToggleCursorLine()
-	highlight Normal guibg=NONE ctermbg=NONE
-	if (bufname("%") =~ "NERD_Tree")
-		highlight CursorLine guibg='#ffb26b' guifg='#000000'
-		autocmd BufEnter,FileType nerdtree setlocal statusline=%#Normal#
-	elseif (bufname("%") =~ "-RecentFiles-")
-		highlight CursorLine guibg='#3e4452'
-	else
-		"setlocal cursorline
-		highlight clear Cursorline
-		highlight CursorLineNr term=bold cterm=bold gui=bold guifg='#f78c6c' guibg=NONE
-		highlight LineNr guibg=NONE
-		highlight VertSplit guibg=NONE
-		highlight SignColumn guibg=NONE
-		highlight Normal guibg=NONE ctermbg=NONE
-	endif
+  highlight Normal guibg=NONE ctermbg=NONE
+  if (bufname("%") =~ "NERD_Tree")
+    highlight CursorLine guibg='#ffb26b' guifg='#000000'
+    autocmd BufEnter,FileType nerdtree setlocal statusline=%#Normal#
+  elseif (bufname("%") =~ "-RecentFiles-")
+    highlight CursorLine guibg='#3e4452'
+  else
+    "setlocal cursorline
+    highlight clear Cursorline
+    highlight CursorLineNr term=bold cterm=bold gui=bold guifg='#f78c6c' guibg=NONE
+    highlight LineNr guibg=NONE
+    highlight VertSplit guibg=NONE
+    highlight SignColumn guibg=NONE
+    highlight Normal guibg=NONE ctermbg=NONE
+  endif
 endfunction
 
 let g:rainbow_conf = {
-			\	'separately': {
-			\		'nerdtree': 0,
-			\	},
-			\ 'guifgs': ['#c387ea', '#ffb26b', '#b7e07c', '#f07178', '#c387ea']
-			\}
+      \	'separately': {
+      \		'nerdtree': 0,
+      \	},
+      \ 'guifgs': ['#c387ea', '#ffb26b', '#b7e07c', '#f07178', '#c387ea']
+      \}
 
 let NERDTreeShowHidden = 1
 let NERDTreeQuitOnOpen = 1
@@ -146,49 +146,49 @@ let NERDTreeMinimalUI = 1
 "let g:NERDTreePatternMatchHighlightFullName = 1
 
 let g:lightline = {
-			\ 'active': {
-			\   'left': [ [ 'mode', 'paste' ],
-			\             [ 'readonly', 'filename', 'modified' ] ]
-			\ },
-			\  'colorscheme': 'palenight',
-			\  'component_function': {
-			\    'filetype': 'MyFiletype',
-			\    'fileformat': 'MyFileformat',
-			\ },
-			\  'tab_component_function': {
-			\	  'tabnum': 'LightlineWebDevIcons',
-			\	},
-			\  'tabline': {
-			\    'right': [ [ 'absolutepath', 'modified' ] ]
-			\ },
-\ }
+      \ 'active': {
+      \   'left': [ [ 'mode', 'paste' ],
+      \             [ 'readonly', 'filename', 'modified' ] ]
+      \ },
+      \  'colorscheme': 'palenight',
+      \  'component_function': {
+      \    'filetype': 'MyFiletype',
+      \    'fileformat': 'MyFileformat',
+      \ },
+      \  'tab_component_function': {
+      \	  'tabnum': 'LightlineWebDevIcons',
+      \	},
+      \  'tabline': {
+      \    'right': [ [ 'absolutepath', 'modified' ] ]
+      \ },
+      \ }
 
 let g:lightline.separator = { 'left': "\uE0b0", 'right': "\uE0b2" }
 let g:lightline.subseparator = { 'left': '', 'right': '' }
 
 function! LightlineWebDevIcons(n)
-	let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
-	return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
+  let l:bufnr = tabpagebuflist(a:n)[tabpagewinnr(a:n) - 1]
+  return WebDevIconsGetFileTypeSymbol(bufname(l:bufnr))
 endfunction
 
 autocmd VimEnter * call SetupLightlineColors()
 function SetupLightlineColors() abort
-	let l:palette = lightline#palette()
-	let l:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
-	let l:palette.insert.middle = l:palette.normal.middle
-	let l:palette.replace.middle = l:palette.normal.middle
-	let l:palette.visual.middle = l:palette.normal.middle
-	let l:palette.inactive.middle = l:palette.normal.middle
-	let l:palette.tabline.middle = l:palette.normal.middle
-	call lightline#colorscheme()
+  let l:palette = lightline#palette()
+  let l:palette.normal.middle = [ [ 'NONE', 'NONE', 'NONE', 'NONE' ] ]
+  let l:palette.insert.middle = l:palette.normal.middle
+  let l:palette.replace.middle = l:palette.normal.middle
+  let l:palette.visual.middle = l:palette.normal.middle
+  let l:palette.inactive.middle = l:palette.normal.middle
+  let l:palette.tabline.middle = l:palette.normal.middle
+  call lightline#colorscheme()
 endfunction
 
 function! MyFiletype()
-	return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
+  return winwidth(0) > 70 ? (strlen(&filetype) ? &filetype . ' ' . WebDevIconsGetFileTypeSymbol() : 'no ft') : ''
 endfunction
 
 function! MyFileformat()
-	return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
+  return winwidth(0) > 70 ? (&fileformat . ' ' . WebDevIconsGetFileFormatSymbol()) : ''
 endfunction
 
 "let g:airline_powerline_fonts = 1
@@ -208,18 +208,18 @@ endfunction
 
 
 let g:startify_custom_header = [
-			\ '     ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ',
-			\ '     ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ',
-			\ '     ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ',
-			\ '     ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ',
-			\ '     ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ',
-			\ '     ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ',
-			\ ]
+      \ '     ███╗   ██╗███████╗ ██████╗ ██╗   ██╗██╗███╗   ███╗ ',
+      \ '     ████╗  ██║██╔════╝██╔═══██╗██║   ██║██║████╗ ████║ ',
+      \ '     ██╔██╗ ██║█████╗  ██║   ██║██║   ██║██║██╔████╔██║ ',
+      \ '     ██║╚██╗██║██╔══╝  ██║   ██║╚██╗ ██╔╝██║██║╚██╔╝██║ ',
+      \ '     ██║ ╚████║███████╗╚██████╔╝ ╚████╔╝ ██║██║ ╚═╝ ██║ ',
+      \ '     ╚═╝  ╚═══╝╚══════╝ ╚═════╝   ╚═══╝  ╚═╝╚═╝     ╚═╝ ',
+      \ ]
 
 autocmd BufNewFile,BufRead * if &ft == '' | set ft=config | endif
 autocmd BufNewFile,BufRead *.conf set ft=config
 autocmd BufReadPost * if line("'\"") >= 1 && line("'\"") <= line("$") && &ft !~# 'commit' | exe "normal! g`\"" | endif
 augroup RestoreCursorShapeOnExit
-    autocmd!
-    autocmd VimLeave * set guicursor=a:ver20
+  autocmd!
+  autocmd VimLeave * set guicursor=a:ver20
 augroup END
