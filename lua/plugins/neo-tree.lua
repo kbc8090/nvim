@@ -8,7 +8,7 @@ return {
   branch = "v2.x",
   priority = 100,
   -- lazy = true,
-  -- event = "VeryLazy",
+  event = "VeryLazy",
   config = function()
     require("neo-tree").setup({
       close_if_last_window = true,

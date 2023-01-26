@@ -1,6 +1,7 @@
 return {
   "rcarriga/nvim-notify",
-  lazy = false,
+  -- lazy = false,
+  event = "VeryLazy",
   priority = 700,
   keys = {
     {
