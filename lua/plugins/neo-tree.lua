@@ -6,6 +6,7 @@ return {
     "MunifTanjim/nui.nvim",
   },
   branch = "v2.x",
+  priority = 100,
   -- lazy = true,
   -- event = "VeryLazy",
   config = function()
@@ -27,6 +28,11 @@ return {
           expander_collapsed = "",
           expander_expanded = "",
           expander_highlight = "String",
+        },
+        icon = {
+          folder_closed = "",
+          folder_open = "",
+          folder_empty = "",
         },
         git_status = {
           symbols = {
