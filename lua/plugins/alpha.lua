@@ -8,7 +8,7 @@ return {
     local dashboard = require("alpha.themes.dashboard")
     local logo = [[
     ██████   █████                   █████   █████  ███                  
-    ░░██████ ░░███                   ░░███   ░░███  ░░░                   
+    ░██████ ░░███                   ░░███   ░░███  ░░░                   
     ░███░███ ░███   ██████   ██████  ░███    ░███  ████  █████████████   
     ░███░░███░███  ███░░███ ███░░███ ░███    ░███ ░░███ ░░███░░███░░███  
     ░███ ░░██████ ░███████ ░███ ░███ ░░███   ███   ░███  ░███ ░███ ░███  
@@ -47,7 +47,7 @@ return {
   end,
   config = function(_, dashboard)
     -- vim.b.miniindentscope_disable = true
-    math.randomseed(os.time())
+    -- math.randomseed(os.time())
 
     -- close Lazy and re-open when the dashboard is ready
     if vim.o.filetype == "lazy" then

@@ -25,8 +25,8 @@ return {
           last_indent_marker = "└",
           highlight = "IndentBlanklineChar",
           with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
-          expander_collapsed = "",
-          expander_expanded = "",
+          expander_collapsed = "",
+          expander_expanded = "",
           expander_highlight = "String",
         },
         icon = {
