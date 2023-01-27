@@ -43,6 +43,7 @@ o.numberwidth = 3
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
 
+g.space_nvim_transparent_bg = true
 g.loaded_netrw = 1
 g.loaded_netrwPlugin = 1
 g.loaded_getscript = 1

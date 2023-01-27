@@ -1,7 +1,7 @@
 return {
   "xiyaowong/nvim-transparent",
   lazy = false,
-  priority = 900,
+  priority = 40,
   config = function()
     require("transparent").setup({
       enable = true, -- boolean: enable transparent
@@ -18,6 +18,11 @@ return {
       "NormalFloat",
       "VertSplit",
       "WhichKeyFloat",
+      "GitGutterChange",
+      "GitGutterAdd",
+      "GitGutterDelete",
+      "GitGutterChangeDelete",
+      "FloatBorder",
     },
     exclude = {}, -- table: groups you don't want to clear
   })

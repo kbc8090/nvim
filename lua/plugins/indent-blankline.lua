@@ -1,6 +1,6 @@
 return {
   "lukas-reineke/indent-blankline.nvim",
-  lazy = true,
+  lazy = false,
   event = "BufReadPost",
   cond = true,
   config = function()

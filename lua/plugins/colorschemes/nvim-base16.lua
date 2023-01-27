@@ -1,4 +1,5 @@
 return {
   'RRethy/nvim-base16',
-  lazy = false
+  lazy = false,
+  cond = false
 }
