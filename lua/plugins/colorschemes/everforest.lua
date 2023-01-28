@@ -4,7 +4,7 @@ return {
   config = function()
     require("everforest").setup({
       -- Default is "medium".
-      background = "medium",
+      background = "hard",
       -- How much of the background should be transparent. Options are 0, 1 or 2.
       -- Default is 0.
       --

@@ -18,7 +18,7 @@ bind('n', '<leader>b', '<CMD>bdelete<CR>', { desc = "Close Current Buffer" })
 bind('n', '<leader>dt', '<CMD>Gitsigns diffthis<CR>', { desc = "Gitsigns Next Hunk" })
 
 -------------------------------------------------------------------------------
--- Telescope Plugin
+-- Telescope Plugin --
 -------------------------------------------------------------------------------
 local telescope_leader = vim.g.mapleader.."f"
 table.insert(prefix_list, {"n", "<Space>t", { desc = "Telescope" }})
