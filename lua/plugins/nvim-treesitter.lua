@@ -4,7 +4,7 @@ return {
   -- event = "VeryLazy",
   config = function ()
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "c", "lua", "vim", "help", "rust", "python", "haskell" },
+      ensure_installed = { "c", "lua", "vim", "help", "rust", "python", "haskell", "fish", "bash", "html", "diff" },
 
       -- Only sync_install if running headless.
       -- From: https://github.com/nvim-treesitter/nvim-treesitter/issues/3579#issuecomment-1278662119
