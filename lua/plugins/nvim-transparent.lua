@@ -23,6 +23,10 @@ return {
       "GitGutterDelete",
       "GitGutterChangeDelete",
       "FloatBorder",
+      "TelescopeNormal",
+      "TelescopeResultsNormal",
+      "TelescopePreviewNormal",
+      "TelescopePromptNormal",
     },
     exclude = {}, -- table: groups you don't want to clear
   })

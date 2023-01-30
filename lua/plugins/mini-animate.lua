@@ -2,6 +2,7 @@ return {
   "echasnovski/mini.animate",
   -- "echasnovski/mini.nvim",
   -- branch = "stable",
+  cond = true,
   lazy = true,
   event = "VeryLazy",
   config = function()

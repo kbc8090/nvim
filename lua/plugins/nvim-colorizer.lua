@@ -1,7 +1,7 @@
 return {
   "NvChad/nvim-colorizer.lua",
   -- lazy = false,
-  event = "VeryLazy",
+  event = "BufReadPre",
   config = function()
     require('colorizer').setup({
       filetypes = {

@@ -29,6 +29,7 @@ vim.api.nvim_create_autocmd({ "FileType" }, {
     vim.b.miniindentscope_disable = true
   end,
 })
+
 -- Highlight on yank
 vim.api.nvim_create_autocmd({ "TextYankPost" }, {
   callback = function()
@@ -53,3 +54,18 @@ vim.api.nvim_create_autocmd({ "BufReadPost" }, {
     end
   end,
 })
+
+
+-- vim.api.nvim_create_augroup("rainbow", {
+--   clear = true,
+-- })
+-- vim.api.nvim_create_autocmd({ "Filetype" }, {
+--   pattern = "*",
+--   callback = function()
+--     vim.api.nvim_set_hl(0, "rainbowcol1", {
+--       bold = true,
+--       fg = vim.api.nvim_get_hl_by_name("Identifier", true).foreground,
+--     })
+--   end,
+--   group = "rainbow",
+-- })
