@@ -10,7 +10,7 @@ return {
         insert = "#78ccc5",
         visual = "#ed8cea",
       },
-      line_opacity = 0.33,
+      line_opacity = 0.36,
       set_cursor = false,
       set_cursorline = false,
       set_number = false,

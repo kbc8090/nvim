@@ -7,7 +7,7 @@ return {
     require('material').setup({
       contrast = {
         terminal = false, -- Enable contrast for the built-in terminal
-        sidebars = false, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
+        sidebars = true, -- Enable contrast for sidebar-like windows ( for example Nvim-Tree )
         floating_windows = false, -- Enable contrast for floating windows
         cursor_line = false, -- Enable darker background for the cursor line
         non_current_windows = false, -- Enable darker background for non-current windows
@@ -57,6 +57,6 @@ return {
   custom_colors = nil, -- If you want to everride the default colors, set this to a function
   custom_highlights = {}, -- Overwrite highlights with your own
 })
-vim.g.material_style = "oceanic"
+vim.g.material_style = "palenight"
    end
  }
