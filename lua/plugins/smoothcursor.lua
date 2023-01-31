@@ -1,16 +1,17 @@
 return {
   'gen740/SmoothCursor.nvim',
   lazy = false,
+  cond = false,
   priority = 1000,
   config = function()
     require('smoothcursor').setup({
       autostart = true,
       cursor = "▷",              -- cursor shape (need nerd font)
       texthl = "SmoothCursor",   -- highlight group, default is { bg = nil, fg = "#FFD400" }
-      linehl = "CursorLineNR",              -- highlight sub-cursor line like 'cursorline', "CursorLine" recommended
+      linehl = "Statement",              -- highlight sub-cursor line like 'cursorline', "CursorLine" recommended
       type = "exp",          -- define cursor movement calculate function, "default" or "exp" (exponential).
       fancy = {
-        enable = true,        -- enable fancy mode
+        enable = false,        -- enable fancy mode
         head = { cursor = "▷", texthl = "SmoothCursor", linehl = nil },
         body = {
           { cursor = "", texthl = "Label" },

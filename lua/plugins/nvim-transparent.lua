@@ -28,6 +28,8 @@ return {
       "TelescopePreviewNormal",
       "TelescopePromptNormal",
       "TelescopeBorder",
+      "TelescopePreviewBorder",
+      "TelescopePromptBorder",
     },
     exclude = {}, -- table: groups you don't want to clear
   })
