@@ -1,8 +1,8 @@
 return {
   "lukas-reineke/indent-blankline.nvim",
-  lazy = false,
-  event = "BufReadPost",
-  cond = true,
+  -- lazy = true,
+  event = "VeryLazy",
+  -- cond = true,
   config = function()
     require("indent_blankline").setup {
       show_end_of_line = true,

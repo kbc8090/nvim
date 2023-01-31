@@ -1,6 +1,7 @@
 return {
   "folke/tokyonight.nvim",
-  lazy = false,
+  -- lazy = false,
+  event = "VeryLazy",
   priority = 1000,
   config = function()
     require("tokyonight").setup({
@@ -34,8 +35,39 @@ return {
       --- function will be called with a Highlights and ColorScheme table
       ---@param highlights Highlights
       ---@param colors ColorScheme
-      on_highlights = function(highlights, colors) end,
+      on_highlights = function(hl, c)
+        hl.rainbowcol1 = {
+          fg = c.yellow,
+          bold = true,
+        }
+        hl.rainbowcol2 = {
+          fg = c.blue,
+          bold = true,
+        }
+        hl.rainbowcol3 = {
+          fg = c.red,
+          bold = true,
+        }
+        hl.rainbowcol4 = {
+          fg = c.yellow,
+          bold = true,
+        }
+        hl.rainbowcol5 = {
+          fg = c.teal,
+          bold = true,
+        }
+        hl.rainbowcol6 = {
+          fg = c.magenta,
+          bold = true,
+        }
+        hl.rainbowcol7 = {
+          fg = c.purple,
+          bold = true,
+        }
+        hl.CursorLine = {
+          bg = "#32384f",
+        }
+      end,
     })
-    --vim.cmd('colorscheme tokyonight-storm')
   end
 }

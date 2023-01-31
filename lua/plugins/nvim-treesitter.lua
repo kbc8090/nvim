@@ -15,7 +15,7 @@ return {
     -- local color2 = vim.api.nvim_get_hl_by_name("Constant", true).foreground
     -- local color3 = vim.api.nvim_get_hl_by_name("Conditional", true).foreground
     require("nvim-treesitter.configs").setup({
-      ensure_installed = { "c", "lua", "vim", "help", "rust", "python", "haskell", "fish", "bash", "html", "diff" },
+      ensure_installed = { "c", "lua", "vim", "help", "rust", "python", "haskell", "fish", "bash", "html", "diff", "cpp", "javascript" },
 
       -- Only sync_install if running headless.
       -- From: https://github.com/nvim-treesitter/nvim-treesitter/issues/3579#issuecomment-1278662119
@@ -28,11 +28,15 @@ return {
       rainbow = {
         enable = true,
         extended_mode = true,
-         -- colors = {
-         --   vim.api.nvim_get_hl_by_name("Error", true).foreground,
-         --  -- 'color2',
-         --  -- 'color3',
-         -- },
+         colors = {
+           "#f9d202",
+           "#d45ed2",
+           "#179cfa",
+           "#f9d202",
+           "#d45ed2",
+           "#179cfa",
+           "#f9d202",
+         },
       },
       -- markid = { enable = true }
     })

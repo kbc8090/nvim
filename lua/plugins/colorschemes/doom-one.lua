@@ -23,13 +23,13 @@ return {
     -- -- Plugins integration
     -- vim.g.doom_one_plugin_neorg = true
     -- vim.g.doom_one_plugin_barbar = false
-    -- vim.g.doom_one_plugin_telescope = true
+     vim.g.doom_one_plugin_telescope = true
     -- vim.g.doom_one_plugin_neogit = true
     -- vim.g.doom_one_plugin_nvim_tree = true
     -- vim.g.doom_one_plugin_dashboard = true
     -- vim.g.doom_one_plugin_startify = true
-    -- vim.g.doom_one_plugin_whichkey = true
-    -- vim.g.doom_one_plugin_indent_blankline = true
+     vim.g.doom_one_plugin_whichkey = true
+     vim.g.doom_one_plugin_indent_blankline = true
     -- vim.g.doom_one_plugin_vim_illuminate = true
     -- vim.g.doom_one_plugin_lspsaga = false
     --
