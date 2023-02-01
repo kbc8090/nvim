@@ -19,7 +19,6 @@ o.expandtab = true
 o.scrolloff = 3
 o.cursorline = true
 o.title = true
-o.mouse = 'a'
 o.termguicolors = true
 o.updatetime = 100
 o.splitright = true
@@ -42,6 +41,7 @@ o.numberwidth = 3
 
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
+vim.opt.mouse = "a"
 
 g.space_nvim_transparent_bg = true
 g.loaded_netrw = 1
@@ -55,3 +55,16 @@ g.loaded_netrwPlugin = 1
 g.loaded_netrwSettings = 1
 g.loaded_netrwFileHandlers = 1
 g.transparent_enabled = true
+
+if vim.g.neovide then
+
+  vim.opt.guifont = { "JetBrainsMonoNL NF", ":h12" }
+  vim.g.neovide_transparency = 0.88
+  vim.g.neovide_refresh_rate = 140
+  vim.g.neovide_confirm_quit = true
+  vim.g.neovide_no_idle = true
+  vim.g.neovide_remember_window_size = true
+  vim.g.neovide_cursor_antialiasing = true
+  vim.api.nvim_set_hl(0, 'Normal', { bg = "#222638" }, true)
+
+end
