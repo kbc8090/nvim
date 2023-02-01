@@ -20,6 +20,7 @@ o.scrolloff = 3
 o.cursorline = true
 o.title = true
 o.termguicolors = true
+o.mouse = 'a'
 o.updatetime = 100
 o.splitright = true
 o.splitbelow = true
@@ -41,7 +42,6 @@ o.numberwidth = 3
 
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
-vim.opt.mouse = "a"
 
 g.space_nvim_transparent_bg = true
 g.loaded_netrw = 1
