@@ -59,7 +59,7 @@ g.transparent_enabled = true
 if vim.g.neovide then
 
   vim.opt.guifont = { "JetBrainsMonoNL NF", ":h12" }
-  vim.g.neovide_transparency = 0.88
+  vim.g.neovide_transparency = 0.89
   vim.g.neovide_refresh_rate = 140
   vim.g.neovide_confirm_quit = true
   vim.g.neovide_no_idle = true
