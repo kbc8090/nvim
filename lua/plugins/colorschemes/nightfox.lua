@@ -8,5 +8,5 @@ return {
         transparent = true,     -- Disable setting background
       },
     })
-    end
-  }
+  end
+}

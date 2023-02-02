@@ -50,15 +50,15 @@ return {
     -- math.randomseed(os.time())
 
     -- close Lazy and re-open when the dashboard is ready
-    if vim.o.filetype == "lazy" then
-      vim.cmd.close()
-      vim.api.nvim_create_autocmd("User", {
-        pattern = "AlphaReady",
-        callback = function()
-          require("lazy").show()
-        end,
-      })
-    end
+    -- if vim.o.filetype == "lazy" then
+    --   vim.cmd.close()
+    --   vim.api.nvim_create_autocmd("User", {
+    --     pattern = "AlphaReady",
+    --     callback = function()
+    --       require("lazy").show()
+    --     end,
+    --   })
+    -- end
 
     require("alpha").setup(dashboard.opts)
     -- vim.cmd([[

@@ -36,6 +36,12 @@ return {
           fg = 'foam',
           bold = true,
         },
+        BufferLineIndicatorSelected = {
+          fg = 'pine',
+        },
+        IndentBlanklineChar = {
+          fg = '#44415a',
+        },
       }
     })
   end
