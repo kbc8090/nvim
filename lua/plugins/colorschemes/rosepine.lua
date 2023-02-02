@@ -46,6 +46,12 @@ return {
         CursorLine = {
           bg = '#393552',
         },
+        TelescopePromptPrefix = {
+          fg = 'gold',
+        },
+        TelescopeTitle = {
+          fg = 'rose',
+        },
       }
     })
   end

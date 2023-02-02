@@ -67,6 +67,9 @@ return {
         hl.CursorLine = {
           bg = "#32384f",
         }
+        hl.TelescopeSelectionCaret = {
+          fg = c.green,
+        }
       end,
     })
   end
