@@ -30,7 +30,7 @@
   "nvim-colorizer.lua": { "branch": "master", "commit": "760e27df4dd966607e8fb7fd8b6b93e3c7d2e193" },
   "nvim-notify": { "branch": "master", "commit": "bdd647f61a05c9b8a57c83b78341a0690e9c29d7" },
   "nvim-transparent": { "branch": "main", "commit": "6816751e3d595b3209aa475a83b6fbaa3a5ccc98" },
-  "nvim-treesitter": { "branch": "master", "commit": "f0e083912ac42e9001e02a89f70269aa0698e9ec" },
+  "nvim-treesitter": { "branch": "master", "commit": "69867ffe7e05559fdb055f6b5a2589fc6bee1070" },
   "nvim-ts-rainbow": { "branch": "master", "commit": "aa83e4967bf78f85ffd9a11e159900c7ea7e423b" },
   "nvim-web-devicons": { "branch": "master", "commit": "a421d183ef37dfa13f51a5805bed2381aebf9080" },
   "one_monokai.nvim": { "branch": "main", "commit": "37a61a792bae9550a4b2e234ee9dab76af4980d1" },

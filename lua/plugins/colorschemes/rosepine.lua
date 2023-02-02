@@ -7,6 +7,7 @@ return {
     require("rose-pine").setup({
       dark_variant = 'moon',
       disable_background = true,
+      disable_italics = false,
       highlight_groups = {
         rainbowcol1 = {
           fg = 'rose',
@@ -29,18 +30,21 @@ return {
           bold = true,
         },
         rainbowcol6 = {
-          fg = 'love',
-          bold = true,
-        },
-        rainbowcol7 = {
           fg = 'foam',
           bold = true,
         },
+        rainbowcol7 = {
+          fg = 'love',
+          bold = true,
+        },
         BufferLineIndicatorSelected = {
-          fg = 'pine',
+          fg = 'iris',
         },
         IndentBlanklineChar = {
           fg = '#44415a',
+        },
+        CursorLine = {
+          bg = '#393552',
         },
       }
     })
