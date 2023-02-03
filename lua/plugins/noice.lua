@@ -1,6 +1,6 @@
 return {
   "folke/noice.nvim",
-  event = "VeryLazy",
+  event = "BufReadPre",
   config = function()
     require("noice").setup({
       lsp = {

@@ -8,7 +8,7 @@ return {
 			options = {
 				icons_enabled = true,
 				globalstatus = true,
-				disabled_filetypes = { statusline = { "lazy", "alpha" } },
+				disabled_filetypes = { statusline = { "lazy", "alpha", "neo-tree", "TelescopePrompt" } },
 				theme = "auto"
 			},
 			sections = {
