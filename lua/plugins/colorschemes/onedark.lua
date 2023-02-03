@@ -39,6 +39,13 @@ return {
           fg = "$red",
           bold = true,
         },
+        NeoTreeWinSeparator = {
+          fg = "$bg3",
+          bold = true,
+        },
+        BufferLineIndicatorSelected = {
+          fg = "$orange",
+        },
       }, -- Override highlight groups
 
       -- Plugins Config --
