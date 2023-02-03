@@ -1,7 +1,7 @@
 return {
   'rmehri01/onenord.nvim',
   -- branch = "main",
-  cond = false,
+  cond = true,
   lazy = true,
   priority = 1000,
   config = function()

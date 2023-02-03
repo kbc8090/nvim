@@ -15,6 +15,9 @@ return {
       window = {
         position = "left",
         width = 35,
+          mappings = {
+            ["<space>"] = "none",
+          },
       },
       default_component_configs = {
         indent = {
