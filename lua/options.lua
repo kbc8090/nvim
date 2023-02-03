@@ -10,7 +10,7 @@ o.hlsearch = true
 o.showcmd = true
 o.cmdheight = 1
 o.scrolloff = 4
-o.laststatus = 3
+o.laststatus = 0
 o.termguicolors = true
 o.tabstop = 3
 o.shiftwidth = 2
@@ -44,16 +44,16 @@ vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
 
 g.space_nvim_transparent_bg = true
-g.loaded_netrw = 1
-g.loaded_netrwPlugin = 1
-g.loaded_getscript = 1
-g.loaded_tutor = 1
-g.loaded_matchparen = 1
-g.loaded_logiPat = 1
-g.loaded_rrhelper = 1
-g.loaded_netrwPlugin = 1
-g.loaded_netrwSettings = 1
-g.loaded_netrwFileHandlers = 1
+-- g.loaded_netrwPlugin = 1
+-- g.loaded_netrw = 1
+-- g.loaded_getscript = 1
+-- g.loaded_tutor = 1
+-- g.loaded_matchparen = 1
+-- g.loaded_logiPat = 1
+-- g.loaded_rrhelper = 1
+-- g.loaded_netrwSettings = 1
+-- g.loaded_netrw_gitignore = 1
+-- g.loaded_netrwFileHandlers = 1
 g.transparent_enabled = true
 
 if vim.g.neovide then

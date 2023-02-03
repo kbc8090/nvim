@@ -4,6 +4,8 @@ return {
   event = "VeryLazy",
   priority = 1220,
   config = function()
+    local material = require "material"
+    local colors = require 'material.colors'
     require('material').setup({
       contrast = {
         terminal = false, -- Enable contrast for the built-in terminal
@@ -14,10 +16,10 @@ return {
         filetypes = {}, -- Specify which filetypes get the contrasted (darker) background
       },
       styles = { -- Give comments style such as bold, italic, underline etc.
-      comments = { --[[ italic = true ]] },
-      strings = { --[[ bold = true ]] },
+      comments = { italic = true },
+      strings = { bold = true },
       keywords = { --[[ underline = true ]] },
-      functions = { --[[ bold = true, undercurl = true ]] },
+      functions = { bold = false },
       variables = {},
       operators = {},
       types = {},
@@ -54,7 +56,9 @@ return {
   },
   lualine_style = "default", -- Lualine style ( can be 'stealth' or 'default' )
   async_loading = false, -- Load parts of the theme asyncronously for faster startup (turned on by default)
-  custom_colors = nil, -- If you want to everride the default colors, set this to a function
+  custom_colors = function (c)
+    c.editor.fg_dark = "#b3badb"
+  end,
   custom_highlights = {
     rainbowcol1 = { fg = "#f9d202", bold = true },
     rainbowcol2 = { fg = "#d45ed2", bold = true },
@@ -63,8 +67,10 @@ return {
     rainbowcol5 = { fg = "#d45ed2", bold = true },
     rainbowcol6 = { fg = "#179cfa", bold = true },
     rainbowcol7 = { fg = "#f9d202", bold = true },
+    TelescopePromptPrefix = { fg = colors.main.purple },
+    TelescopeTitle = { fg = colors.main.yellow },
   }, -- Overwrite highlights with your own
 })
 vim.g.material_style = "palenight"
-   end
+ end
  }

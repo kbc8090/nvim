@@ -1,5 +1,6 @@
 return {
   "cpea2506/one_monokai.nvim",
-  lazy = false,
-  -- priority = 1000
+  -- lazy = false,
+  event = "VeryLazy",
+  priority = 1000
 }

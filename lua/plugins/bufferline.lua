@@ -3,7 +3,7 @@ return {
   tag = 'v3.1.0',
   dependencies = "nvim-tree/nvim-web-devicons",
   -- lazy = true,
-  event = "VimEnter",
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("bufferline").setup({
       options = {
@@ -14,6 +14,11 @@ return {
         close_icon = "",
         show_close_icon  = false,
         color_icons = true,
+        custom_filter = function(bufnr)
+            if vim.bo[bufnr].filetype ~= 'alpha' then
+                return true 
+            end
+        end,
         indicator = {
           icon = '▌', -- this should be omitted if indicator style is not 'icon'
           -- style = 'icon',

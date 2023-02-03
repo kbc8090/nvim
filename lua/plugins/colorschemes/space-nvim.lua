@@ -1,5 +1,6 @@
 return {
   'Th3Whit3Wolf/space-nvim',
-  lazy = false,
-  -- priority = 900,
+  -- lazy = false,
+  event = "VeryLazy",
+  priority = 900
 }

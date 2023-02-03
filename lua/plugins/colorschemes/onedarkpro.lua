@@ -1,5 +1,6 @@
 return {
   "olimorris/onedarkpro.nvim",
+  event = "VeryLazy",
   priority = 1000,
   cond = false,
   config = function()

@@ -1,8 +1,9 @@
 return {
   "navarasu/onedark.nvim",
-  lazy = false,
+  -- lazy = false,
+  event = "VeryLazy",
   cond = true,
-  priority = 300,
+  priority = 1000,
   config = function()
     require('onedark').setup ({
       -- Main options --

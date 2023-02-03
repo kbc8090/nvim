@@ -1,10 +1,10 @@
-return  {
+return {
   "echasnovski/mini.indentscope",
   version = false, -- wait till new 0.7.0 release to put it back on semver
-  lazy = false,
+  -- lazy = false,
   -- cond = true,
   priority = 800,
-  -- event = "BufReadPost",
+  event = { "BufReadPre", "BufNewFile" },
   config = function()
     require("mini.indentscope").setup({
       symbol = "▏",

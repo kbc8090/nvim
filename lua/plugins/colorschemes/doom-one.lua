@@ -1,6 +1,7 @@
 return {
   'NTBBloodbath/doom-one.nvim',
-  lazy = false,
+  -- lazy = false,
+  event = "VeryLazy",
   priority = 900,
   init = function()
     -- Add color to cursor

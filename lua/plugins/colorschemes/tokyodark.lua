@@ -1,5 +1,6 @@
 return {
   'tiagovla/tokyodark.nvim',
-  lazy = false, 
+  -- lazy = false, 
+  event = "VeryLazy",
   priority = 1000
 }

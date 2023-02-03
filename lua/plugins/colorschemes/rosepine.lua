@@ -1,7 +1,8 @@
 return {
   'rose-pine/neovim',
   name = 'rose-pine',
-  lazy = false,
+  -- lazy = false,
+  event = "VeryLazy",
   priority = 1000,
   config = function()
     require("rose-pine").setup({

@@ -30,6 +30,7 @@ return {
       "TelescopeBorder",
       "TelescopePreviewBorder",
       "TelescopePromptBorder",
+      "Pmenu",
     },
     exclude = {}, -- table: groups you don't want to clear
   })

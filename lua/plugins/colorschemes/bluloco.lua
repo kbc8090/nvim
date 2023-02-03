@@ -1,8 +1,9 @@
 return {
   'uloco/bluloco.nvim',
   dependencies = { 'rktjmp/lush.nvim'},
-  lazy = false,
-  -- priority = 900,
+  -- lazy = false,
+  event = "VeryLazy",
+  priority = 900,
   config = function()
     require("bluloco").setup({
       style = "dark",
