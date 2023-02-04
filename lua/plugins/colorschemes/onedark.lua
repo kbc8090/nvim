@@ -46,6 +46,9 @@ return {
         BufferLineIndicatorSelected = {
           fg = "$orange",
         },
+        TelescopeTitle = {
+          fg = "$purple",
+        },
       }, -- Override highlight groups
 
       -- Plugins Config --

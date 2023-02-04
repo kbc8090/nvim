@@ -1,7 +1,7 @@
 return {
   "nvim-treesitter/nvim-treesitter",
   -- lazy = false,
-  event = { "BufNewFile", "BufReadPre" },
+  event = { "BufNewFile", "BufReadPre", "BufAdd" },
   config = function ()
     -- local color1 = vim.api.nvim_get_hl_by_name("Error", true).foreground
 		-- color1 = string.format('#%06x', color1)

@@ -3,7 +3,7 @@ return {
   tag = 'v3.1.0',
   dependencies = "nvim-tree/nvim-web-devicons",
   -- lazy = true,
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile", "BufAdd" },
   config = function()
     require("bufferline").setup({
       options = {

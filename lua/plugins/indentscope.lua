@@ -4,7 +4,7 @@ return {
   -- lazy = false,
   -- cond = true,
   priority = 800,
-  event = { "BufReadPre", "BufNewFile" },
+  event = { "BufReadPre", "BufNewFile", "BufAdd" },
   config = function()
     require("mini.indentscope").setup({
       symbol = "▏",
