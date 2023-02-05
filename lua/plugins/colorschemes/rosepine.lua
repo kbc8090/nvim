@@ -53,6 +53,9 @@ return {
         TelescopeTitle = {
           fg = 'rose',
         },
+        NeoTreeFloatTitle = {
+          fg = 'rose',
+        },
       }
     })
   end

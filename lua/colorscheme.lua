@@ -1,2 +1,2 @@
-vim.api.nvim_cmd({ cmd = 'colorscheme', args = { 'doom-one' } }, { output = false })
+vim.api.nvim_cmd({ cmd = 'colorscheme', args = { 'material' } }, { output = false })
 -- vim.cmd.colorscheme('doom-one')

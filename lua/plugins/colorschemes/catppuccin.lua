@@ -5,8 +5,9 @@ return {
   event = "VeryLazy",
   priority = 1000,
   config = function()
+    local mocha = require("catppuccin.palettes").get_palette "mocha"
     require("catppuccin").setup({
-      flavour = "frappe", -- latte, frappe, macchiato, mocha
+      flavour = "mocha", -- latte, frappe, macchiato, mocha
       background = { -- :h background
       light = "latte",
       dark = "mocha",
@@ -15,9 +16,9 @@ return {
     show_end_of_buffer = false, -- show the '~' characters after the end of buffers
     term_colors = false,
     dim_inactive = {
-      enabled = false,
+      enabled = true,
       shade = "dark",
-      percentage = 0.15,
+      percentage = 0.45,
     },
     no_italic = false, -- Force no italic
     no_bold = false, -- Force no bold
@@ -36,7 +37,13 @@ return {
       operators = {},
     },
     color_overrides = {},
-    custom_highlights = {},
+    custom_highlights = function(colors)
+      return {
+        TelescopePromptPrefix = { fg = colors.green },
+        TelescopeTitle = { fg = colors.peach },
+        NeoTreeFloatTitle = { fg = colors.peach },
+      }
+    end,
     integrations = {
       cmp = true,
       gitsigns = true,

@@ -1,7 +1,8 @@
 return {
   "xiyaowong/nvim-transparent",
-  lazy = false,
-  priority = 40,
+  -- lazy = false,
+  -- priority = 40,
+  event = {"BufEnter", "BufAdd", "BufReadPre" },
   config = function()
     require("transparent").setup({
       enable = true, -- boolean: enable transparent

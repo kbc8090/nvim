@@ -5,6 +5,7 @@ local bind = vim.keymap.set
 bind('n', '<leader>w', '<CMD>w<CR>', { desc = "Write File" })
 bind('n', '<leader>q', '<CMD>q<CR>', { desc = "Quit" })
 bind('n', 'cw', 'ciw')
+bind('i', 'jk', '<ESC>')
 bind('n', '<M-j>', '<CMD>vertical resize-5<CR>', { desc = "Decrease Size of Vertical Split" })
 bind('n', '<M-k>', '<CMD>vertical resize+5<CR>', { desc = "Increase Size of Vertical Split" })
 bind('n', '<leader>s', '<c-w>w', { desc = "Switch Between Vertical Splits" })

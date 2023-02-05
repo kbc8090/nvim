@@ -43,7 +43,6 @@ o.numberwidth = 3
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
 
-g.space_nvim_transparent_bg = true
 -- g.loaded_netrwPlugin = 1
 -- g.loaded_netrw = 1
 -- g.loaded_getscript = 1
@@ -65,6 +64,6 @@ if vim.g.neovide then
   vim.g.neovide_no_idle = true
   vim.g.neovide_remember_window_size = true
   vim.g.neovide_cursor_antialiasing = true
-  vim.api.nvim_set_hl(0, 'Normal', { bg = "#222638" }, true)
+  -- vim.api.nvim_set_hl(0, 'Normal', { bg = "#222638" }, true)
 
 end

@@ -53,7 +53,10 @@ return {
           fg = colors.bright_orange,
         },
         TelescopeSelectionCaret = {
-          fg = colors.bright_aqua,
+          fg = colors.bright_purple,
+        },
+        NeoTreeFloatTitle = {
+          fg = colors.bright_orange,
         },
       },
       dim_inactive = false,

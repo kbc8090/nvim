@@ -69,6 +69,7 @@ return {
     rainbowcol7 = { fg = "#f9d202", bold = true },
     TelescopePromptPrefix = { fg = colors.main.purple },
     TelescopeTitle = { fg = colors.main.yellow },
+    NeoTreeFloatTitle = { fg = colors.main.yellow },
   }, -- Overwrite highlights with your own
 })
 vim.g.material_style = "palenight"

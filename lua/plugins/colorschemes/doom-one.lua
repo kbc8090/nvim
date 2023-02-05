@@ -34,7 +34,9 @@ return {
     -- vim.g.doom_one_plugin_vim_illuminate = true
     -- vim.g.doom_one_plugin_lspsaga = false
     --
+     -- vim.api.nvim_set_hl(0, 'TelescopeTitle', { fg = "#ff0000" })
 -- vim.api.nvim_create_augroup("rainbow", {
+  --
 --   clear = true,
 -- })
 -- vim.api.nvim_create_autocmd({ "Filetype" }, {
@@ -47,5 +49,5 @@ return {
 --   end,
 --   group = "rainbow",
 -- })
-  end
+  end,
 }

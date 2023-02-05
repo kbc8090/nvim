@@ -70,6 +70,12 @@ return {
         hl.TelescopeSelectionCaret = {
           fg = c.green,
         }
+        hl.NeoTreeFloatTitle = {
+          fg = c.orange,
+        }
+        hl.TelescopeTitle = {
+          fg = c.orange,
+        }
       end,
     })
   end
