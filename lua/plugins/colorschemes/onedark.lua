@@ -1,6 +1,6 @@
 return {
   "navarasu/onedark.nvim",
-  -- lazy = false,
+  lazy = false,
   -- event = "VeryLazy",
   priority = 1000,
   config = function()

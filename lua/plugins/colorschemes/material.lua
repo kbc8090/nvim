@@ -1,7 +1,7 @@
 return {
   'marko-cerovac/material.nvim',
   -- lazy = false,
-  event = "VeryLazy",
+  -- event = "VeryLazy",
   priority = 1220,
   config = function()
     local material = require "material"
@@ -69,7 +69,9 @@ return {
     rainbowcol7 = { fg = "#f9d202", bold = true },
     TelescopePromptPrefix = { fg = colors.main.purple },
     TelescopeTitle = { fg = colors.main.yellow },
+    TelescopeMatching = { fg = colors.main.green },
     NeoTreeFloatTitle = { fg = colors.main.yellow },
+    MiniIndentscopeSymbol = { fg = colors.main.blue },
   }, -- Overwrite highlights with your own
 })
 vim.g.material_style = "palenight"

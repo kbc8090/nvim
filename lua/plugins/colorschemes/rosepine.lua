@@ -52,9 +52,14 @@ return {
         },
         TelescopeTitle = {
           fg = 'rose',
+          bold = true,
+          italic = true,
+          underline = true,
         },
         NeoTreeFloatTitle = {
           fg = 'rose',
+          bold = true,
+          italic = true,
         },
       }
     })

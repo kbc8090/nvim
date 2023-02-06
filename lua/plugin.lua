@@ -31,6 +31,8 @@ require("lazy").setup({
         "netrw",
         "getscript",
         "rrhelper",
+        "rplugin",
+        "spellfile",
         "logiPat",
         "tarPlugin",
         "tohtml",

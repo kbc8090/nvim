@@ -9,6 +9,7 @@ return {
       themes = function(mycolors)
         return {
           NeoTreeFloatTitle = { fg = mycolors.aqua, bold = true },
+          MiniIndentscopeSymbol = { fg = mycolors.aqua },
           rainbowcol1 = { fg = mycolors.yellow, bold = true },
           rainbowcol2 = { fg = mycolors.aqua, bold = true },
           rainbowcol3 = { fg = mycolors.dark_pink, bold = true},

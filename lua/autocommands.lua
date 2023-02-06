@@ -54,18 +54,11 @@ vim.api.nvim_create_autocmd({ "BufReadPost" }, {
     end
   end,
 })
-
-
--- vim.api.nvim_create_augroup("rainbow", {
---   clear = true,
--- })
+--
+--
 -- vim.api.nvim_create_autocmd({ "Filetype" }, {
---   pattern = "*",
+--   pattern = { "*.conf", "*.cfg", "*.config" },
 --   callback = function()
---     vim.api.nvim_set_hl(0, "rainbowcol1", {
---       bold = true,
---       fg = vim.api.nvim_get_hl_by_name("Identifier", true).foreground,
---     })
+--     vim.api.nvim_cmd({ cmd = 'set ft', args = { 'cfg' } }, { output = false })
 --   end,
---   group = "rainbow",
 -- })
