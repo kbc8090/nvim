@@ -1,7 +1,7 @@
 return {
   "navarasu/onedark.nvim",
-  lazy = false,
-  -- event = "VeryLazy",
+  -- lazy = false,
+  event = "VeryLazy",
   priority = 1000,
   config = function()
     require('onedark').setup ({
@@ -48,9 +48,11 @@ return {
         },
         TelescopeTitle = {
           fg = "$purple",
+          bold = true,
         },
         NeoTreeFloatTitle = {
           fg = "$purple",
+          bold = true,
         },
         CursorLine = {
           bg = "$bg3",

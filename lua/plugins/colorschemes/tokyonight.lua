@@ -72,9 +72,11 @@ return {
         }
         hl.NeoTreeFloatTitle = {
           fg = c.orange,
+          bold = true,
         }
         hl.TelescopeTitle = {
           fg = c.orange,
+          bold = true,
         }
       end,
     })

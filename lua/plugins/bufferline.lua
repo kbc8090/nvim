@@ -28,7 +28,7 @@ return {
             filetype = "neo-tree",
             text = "  Explorer",
             text_align = "center",
-            highlight = "Constant",
+            highlight = "BufferLineOffsetHL",
             separator = true,
           }
         },

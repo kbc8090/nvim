@@ -1,7 +1,7 @@
 return {
   'marko-cerovac/material.nvim',
   -- lazy = false,
-  -- event = "VeryLazy",
+  event = "VeryLazy",
   priority = 1220,
   config = function()
     local material = require "material"
