@@ -15,9 +15,9 @@ return {
         show_close_icon  = false,
         color_icons = true,
         custom_filter = function(bufnr)
-            if vim.bo[bufnr].filetype ~= 'alpha' then
-                return true 
-            end
+          if vim.bo[bufnr].filetype ~= 'alpha' then
+            return true 
+          end
         end,
         indicator = {
           icon = '▌', -- this should be omitted if indicator style is not 'icon'
@@ -58,9 +58,14 @@ return {
         },
         offset_separator = {
           fg = {
-           attribute = "fg",
-           highlight = "VertSplit",
+            attribute = "fg",
+            highlight = "VertSplit",
           }
+        },
+        buffer_selected = { 
+          fg = { attribute = "fg", highlight = "Number" },
+          bold = true,
+          italic = true,
         },
       }
     })
