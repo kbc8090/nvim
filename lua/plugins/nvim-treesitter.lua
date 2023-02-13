@@ -3,17 +3,6 @@ return {
   -- lazy = false,
   event = { "BufNewFile", "BufReadPre", "BufAdd" },
   config = function ()
-    -- local color1 = vim.api.nvim_get_hl_by_name("Error", true).foreground
-		-- color1 = string.format('#%06x', color1)
-      -- local M = {}
-      --
-      -- function M.get_color(hlgroup, attr)
-      --   return vim.fn.synIDattr(vim.fn.synIDtrans(vim.fn.hlID("Constant")), attr, 'guifg')
-      --   -- return vim.api.nvim_get_hl_by_name(hlgroup, true)[attr]
-      -- end
-      -- print(M)
-    -- local color2 = vim.api.nvim_get_hl_by_name("Constant", true).foreground
-    -- local color3 = vim.api.nvim_get_hl_by_name("Conditional", true).foreground
     require("nvim-treesitter.configs").setup({
       ensure_installed = { "c", "lua", "vim", "help", "rust", "python", "haskell", "fish", "bash", "html", "diff", "cpp", "javascript" },
 
@@ -29,15 +18,15 @@ return {
         enable = true,
         disable = { "alpha" },
         extended_mode = true,
-         colors = {
-           "#f9d202",
-           "#d45ed2",
-           "#179cfa",
-           "#f9d202",
-           "#d45ed2",
-           "#179cfa",
-           "#f9d202",
-         },
+        colors = {
+          "#f9d202",
+          "#d45ed2",
+          "#179cfa",
+          "#f9d202",
+          "#d45ed2",
+          "#179cfa",
+          "#f9d202",
+        },
       },
       -- markid = { enable = true }
     })

@@ -7,8 +7,8 @@ return {
   config = function()
     require("bufferline").setup({
       options = {
-        max_name_length = 22,
-        tab_size = 22,
+        max_name_length = 23,
+        tab_size = 23,
         modified_icon = "",
         buffer_close_icon = "",
         close_icon = "",
@@ -26,7 +26,7 @@ return {
         offsets = {
           {
             filetype = "neo-tree",
-            text = "  Explorer",
+            text = "  Explorer ",
             text_align = "center",
             highlight = "BufferLineOffsetHL",
             separator = true,

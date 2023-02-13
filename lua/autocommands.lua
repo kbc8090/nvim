@@ -2,8 +2,10 @@
 local cursorline_fg = vim.api.nvim_get_hl_by_name("Constant", true)
 vim.api.nvim_set_hl(0, 'CursorLineNr', { fg = cursorline_fg.foreground, bold = true })
 
+-- Set the bufferline offset highlight to be bold with Constant highlight color from the colorscheme
 local constanthl = vim.api.nvim_get_hl_by_name("Constant", true)
 vim.api.nvim_set_hl(0, 'BufferLineOffsetHL', { fg = constanthl.foreground, bold = true })
+
 -- Set the NeoTree indent line to the same color as indent-blankline provided by the colorscheme
 -- local neotreelines = vim.api.nvim_get_hl_by_name("IndentBlanklineChar", true)
 -- vim.api.nvim_set_hl(0, 'NeoTreeDimText', { fg = neotreelines.foreground })
