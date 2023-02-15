@@ -68,9 +68,9 @@ return {
     rainbowcol6 = { fg = "#179cfa", bold = true },
     rainbowcol7 = { fg = "#f9d202", bold = true },
     TelescopePromptPrefix = { fg = colors.main.purple },
-    TelescopeTitle = { fg = colors.main.yellow },
+    TelescopeTitle = { fg = colors.main.yellow, bold = true },
     TelescopeMatching = { fg = colors.main.green },
-    NeoTreeFloatTitle = { fg = colors.main.yellow },
+    NeoTreeFloatTitle = { fg = colors.main.yellow, bold = true },
     MiniIndentscopeSymbol = { fg = colors.main.blue },
   }, -- Overwrite highlights with your own
 })
