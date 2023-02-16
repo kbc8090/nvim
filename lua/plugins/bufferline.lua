@@ -12,13 +12,17 @@ return {
         modified_icon = "",
         buffer_close_icon = "",
         close_icon = "",
+        close_command = "Bdelete! %d",       -- can be a string | function, see "Mouse actions"
+        right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
+        -- left_mouse_command = "buffer %d",    -- can be a string | function, see "Mouse actions"
+        -- middle_mouse_command = nil,          -- can be a string | function, see "Mouse actions"
         show_close_icon  = false,
         color_icons = true,
-        custom_filter = function(bufnr)
-          if vim.bo[bufnr].filetype ~= 'alpha' then
-            return true 
-          end
-        end,
+        -- custom_filter = function(bufnr)
+        --   if vim.bo[bufnr].filetype ~= 'alpha' then
+        --     return true 
+        --   end
+        -- end,
         indicator = {
           icon = '▌', -- this should be omitted if indicator style is not 'icon'
           -- style = 'icon',

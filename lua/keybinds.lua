@@ -13,8 +13,8 @@ bind('n', '<leader>L', '<CMD>Lazy<CR>', { desc = "Lazy Menu" })
 bind('n', '<leader>n', '<CMD>NeoTreeFocusToggle<CR>', { desc = "NeoTreeToggle Left Pane" })
 bind('n', '<leader>N', '<CMD>NeoTreeFloatToggle<CR>', { desc = "NeoTreeToggle Floating" })
 bind('n', '<TAB>', '<CMD>BufferLineCycleNext<CR>', { desc = "Next Buffer" })
-bind('n', '<leader>C', '<CMD>Telescope colorscheme<CR>')
-bind('n', '<leader>b', '<CMD>bdelete<CR>', { desc = "Close Current Buffer" })
+bind('n', '<leader>c', '<cmd>telescope colorscheme<cr>')
+bind('n', '<leader>b', '<cmd>Bdelete<cr>', { desc = "close current buffer" })
 bind('n', '<leader>dt', '<CMD>Gitsigns diffthis<CR>', { desc = "Gitsigns Next Hunk" })
 
 -------------------------------------------------------------------------------
