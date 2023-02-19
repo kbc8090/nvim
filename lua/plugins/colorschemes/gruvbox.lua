@@ -51,12 +51,15 @@ return {
         },
         TelescopeTitle = {
           fg = colors.bright_orange,
+          bold = true,
         },
         TelescopeSelectionCaret = {
           fg = colors.bright_purple,
+          bold = true,
         },
         NeoTreeFloatTitle = {
           fg = colors.bright_orange,
+          bold = true,
         },
       },
       dim_inactive = false,

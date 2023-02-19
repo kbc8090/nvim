@@ -10,7 +10,7 @@ return {
         max_name_length = 23,
         tab_size = 23,
         modified_icon = "",
-        buffer_close_icon = "",
+        buffer_close_icon = "",
         close_icon = "",
         close_command = "Bdelete! %d",       -- can be a string | function, see "Mouse actions"
         right_mouse_command = "Bdelete! %d", -- can be a string | function, see "Mouse actions"
