@@ -1,5 +1,5 @@
 return {
-  "melkster/modicator.nvim",
+  "mawkler/modicator.nvim",
   cond = false,
   config = function()
     require("modicator").setup({
