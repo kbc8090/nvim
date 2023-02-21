@@ -78,6 +78,10 @@ return {
           fg = c.orange,
           bold = true,
         }
+        hl.BufferLineIndicatorSelected = {
+          fg = c.purple,
+          bold = true,
+        }
       end,
     })
   end
