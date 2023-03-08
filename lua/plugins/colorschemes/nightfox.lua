@@ -11,8 +11,8 @@ return {
       },
       groups = {
         all = {
-          TelescopeTitle = { bold = true, fg = palette.magenta },
-          NeoTreeFloatTitle = { bold = true, fg = palette.magenta },
+          TelescopeTitle = { fg = palette.magenta },
+          NeoTreeFloatTitle = { fg = palette.magenta },
           BufferLineIndicatorSelected = { fg = palette.cyan },
         },
       },
