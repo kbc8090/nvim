@@ -2,7 +2,7 @@ return {
   "catppuccin/nvim",
   name = "catppuccin",
   -- lazy = false,
-  -- event = "VeryLazy",
+  event = "VeryLazy",
   priority = 1000,
   config = function()
     local mocha = require("catppuccin.palettes").get_palette "mocha"
