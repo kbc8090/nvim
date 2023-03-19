@@ -1,11 +1,12 @@
 return {
-  "xiyaowong/nvim-transparent",
+  "xiyaowong/transparent.nvim",
   -- lazy = false,
   -- priority = 40,
   -- event = {"BufEnter", "BufAdd", "BufReadPre" },
+  event = "VeryLazy",
   config = function()
     require("transparent").setup({
-      enable = true, -- boolean: enable transparent
+      -- enable = true, -- boolean: enable transparent
       extra_groups = { -- table/string: additional groups that should be cleared
       -- In particular, when you set it to 'all', that means all available groups
       -- example of akinsho/nvim-bufferline.lua
@@ -34,7 +35,6 @@ return {
       "TelescopePromptPrefix",
       "Pmenu",
     },
-    exclude = {}, -- table: groups you don't want to clear
   })
 end
 }

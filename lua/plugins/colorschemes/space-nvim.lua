@@ -3,7 +3,7 @@ return {
   -- lazy = false,
   event = "VeryLazy",
   priority = 900,
-  init = function()
+  config = function()
     vim.g.space_nvim_transparent_bg = true
   end
 }

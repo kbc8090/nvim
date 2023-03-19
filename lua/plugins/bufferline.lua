@@ -1,10 +1,12 @@
 return {
   'akinsho/bufferline.nvim',
-  tag = 'v3.2.0',
+  tag = 'v3.5.0',
   dependencies = "nvim-tree/nvim-web-devicons",
   -- lazy = true,
   event = { "BufReadPre", "BufNewFile", "BufAdd" },
   config = function()
+    local constanthl = vim.api.nvim_get_hl_by_name("Constant", true)
+    vim.api.nvim_set_hl(0, 'BufferLineOffsetHL', { fg = constanthl.foreground, bold = true })
     require("bufferline").setup({
       options = {
         max_name_length = 23,

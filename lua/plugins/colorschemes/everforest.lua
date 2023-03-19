@@ -2,10 +2,6 @@ return {
   "neanias/everforest-nvim",
   event = "VeryLazy",
   -- Optional; default configuration will be used if setup isn't called.
-  init = function()
-    vim.g.everforest_ui_contrast = "high"
-    vim.g.everforest_better_performance = 1
-  end,
   config = function()
     vim.g.everforest_ui_contrast = "high"
     vim.g.everforest_better_performance = 1
