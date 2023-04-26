@@ -57,6 +57,10 @@ return {
         CursorLine = {
           bg = "$bg3",
         },
+        CursorLineNR = {
+          bg = "$orange",
+          bold = true,
+        },
         MiniIndentscopeSymbol = {
           fg = "$blue",
         },

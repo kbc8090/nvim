@@ -4,12 +4,14 @@ return {
   event = "VeryLazy",
   dependencies = {"nvim-tree/nvim-web-devicons"},
   config = function()
+    local auto_theme_custom = require('lualine.themes.auto')
+    auto_theme_custom.normal.c.bg = 'none'
     require("lualine").setup({
       options = {
         icons_enabled = true,
         globalstatus = true,
         disabled_filetypes = { statusline = { "lazy", "alpha", "TelescopePrompt" } },
-        theme = "auto",
+        theme = auto_theme_custom,
       },
       sections = {
         lualine_c = {

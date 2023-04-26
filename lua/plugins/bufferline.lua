@@ -1,6 +1,7 @@
 return {
   'akinsho/bufferline.nvim',
-  tag = 'v3.5.0',
+  -- tag = 'v3.7.0',
+  version = "*",
   dependencies = "nvim-tree/nvim-web-devicons",
   -- lazy = true,
   event = { "BufReadPre", "BufNewFile", "BufAdd" },
@@ -69,7 +70,7 @@ return {
           }
         },
         buffer_selected = { 
-          fg = { attribute = "fg", highlight = "Number" },
+          fg = { attribute = "fg", highlight = "Constant" },
           bold = true,
           italic = true,
         },
