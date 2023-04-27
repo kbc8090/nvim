@@ -8,7 +8,7 @@ return {
       -- undercurl = true,
       -- underline = true,
       bold = true,
-      italic = true,
+      -- italic = true,
       -- strikethrough = true,
       -- invert_selection = false,
       -- invert_signs = false,
