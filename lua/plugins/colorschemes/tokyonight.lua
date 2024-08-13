@@ -36,31 +36,30 @@ return {
       ---@param highlights Highlights
       ---@param colors ColorScheme
       on_highlights = function(hl, c)
-        hl.rainbowcol1 = {
-          fg = c.yellow,
+        hl.RainbowDelimiterBlue = {
           bold = true,
         }
-        hl.rainbowcol2 = {
+        hl.RainbowDelimiterCyan = {
           fg = c.blue,
           bold = true,
         }
-        hl.rainbowcol3 = {
+        hl.RainbowDelimiterGreen = {
           fg = c.red,
           bold = true,
         }
-        hl.rainbowcol4 = {
+        hl.RainbowDelimiterOrange = {
           fg = c.yellow,
           bold = true,
         }
-        hl.rainbowcol5 = {
+        hl.RainbowDelimiterRed = {
           fg = c.teal,
           bold = true,
         }
-        hl.rainbowcol6 = {
+        hl.RainbowDelimiterViolet = {
           fg = c.magenta,
           bold = true,
         }
-        hl.rainbowcol7 = {
+        hl.RainbowDelimiterYellow = {
           fg = c.purple,
           bold = true,
         }
