@@ -34,7 +34,6 @@ o.pumblend = 10
 o.undofile = true
 o.swapfile = false
 o.clipboard = "unnamedplus"
-o.highlighturl_enabled = true
 o.showmode = false
 o.numberwidth = 3
 -- o.signcolumn = "yes"
@@ -42,7 +41,7 @@ o.numberwidth = 3
 
 vim.opt.fillchars = { eob = " " }
 vim.opt.shortmess:append { s = true, I = true }
-
+--vim.opt.titlestring = [[%f %h%m%r%w %{v:progname} (%{tabpagenr()} of %{tabpagenr('$')})]]
 -- g.loaded_netrwPlugin = 1
 -- g.loaded_netrw = 1
 -- g.loaded_getscript = 1
