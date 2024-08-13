@@ -6,35 +6,40 @@ return {
   priority = 1000,
   config = function()
     require("rose-pine").setup({
+    styles = {
+        bold = true,
+        italic = true,
+        transparency = true,
+    },
       dark_variant = 'moon',
-      disable_background = true,
-      disable_italics = false,
+      --disable_background = true,
+      disable_italics = true,
       highlight_groups = {
-        rainbowcol1 = {
+        RainbowDelimiterRed = {
           fg = 'rose',
           bold = true,
         },
-        rainbowcol2 = {
+        RainbowDelimiterYellow = {
           fg = 'pine',
           bold = true,
         },
-        rainbowcol3 = {
+        RainbowDelimiterBlue = {
           fg = 'iris',
           bold = true,
         },
-        rainbowcol4 = {
+        RainbowDelimiterGreen = {
           fg = 'gold',
           bold = true,
         },
-        rainbowcol5 = {
+        RainbowDelimiterCyan = {
           fg = 'love',
           bold = true,
         },
-        rainbowcol6 = {
+        RainbowDelimiterOrange = {
           fg = 'foam',
           bold = true,
         },
-        rainbowcol7 = {
+        RainbowDelimiterViolet = {
           fg = 'love',
           bold = true,
         },
@@ -53,8 +58,9 @@ return {
         TelescopeTitle = {
           fg = 'rose',
           bold = true,
-          italic = true,
-          underline = true,
+        },
+        TelescopeSelectionCaret = {
+          fg = 'foam',
         },
         NeoTreeFloatTitle = {
           fg = 'rose',
