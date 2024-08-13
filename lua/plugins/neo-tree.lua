@@ -5,7 +5,7 @@ return {
     "nvim-tree/nvim-web-devicons",
     "MunifTanjim/nui.nvim",
   },
-  branch = "v2.x",
+  branch = "v3.x",
   priority = 100,
   -- lazy = true,
   event = "VeryLazy",

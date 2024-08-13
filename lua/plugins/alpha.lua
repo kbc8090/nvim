@@ -23,7 +23,7 @@ return {
       dashboard.button("n", " " .. " New File", ":ene <BAR> startinsert <CR>"),
       dashboard.button("r", " " .. " Recent Files", ":Telescope oldfiles <CR>"),
       dashboard.button("g", " " .. " Find Text (Grep)", ":Telescope live_grep <CR>"),
-      dashboard.button("t", " " .. " Open NeoTree", ":NeoTreeFloat <CR>"),
+      dashboard.button("t", " " .. " Open NeoTree", ":Neotree position=float <CR>"),
       dashboard.button("s", "勒" .. " Restore Session", [[:lua require("persistence").load() <cr>]]),
       dashboard.button("l", "鈴" .. " Lazy", ":Lazy<CR>"),
       dashboard.button("q", " " .. " Quit", ":qa<CR>"),

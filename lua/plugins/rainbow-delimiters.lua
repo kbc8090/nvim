@@ -1,6 +1,6 @@
+
 return {
-  'mrjones2014/nvim-ts-rainbow',
+  'hiphish/rainbow-delimiters.nvim',
   -- lazy = true,
-  cond = false,
   event = { "BufNewFile", "BufReadPre", "BufAdd" }
 }
