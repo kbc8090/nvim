@@ -30,6 +30,7 @@ return {
           RainbowDelimiterYellow = { fg = theme.syn.string, bold = true },
           TelescopeTitle = { fg = theme.syn.number, bold = true },
           TelescopePromptPrefix = { fg = theme.syn.string },
+          TelescopeSelection = { bg = theme.ui.bg_search },
           Operator = { fg = theme.syn.number },
           -- Save an hlgroup with dark background and dimmed foreground
           -- so that you can use it where your still want darker windows.
