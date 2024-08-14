@@ -29,7 +29,7 @@ return {
           FloatBorder = { bg = "none" },
           FloatTitle = { bg = "none" },
           NoiceCmdlineIcon = { bg = "none", fg = theme.ui.fg_dim },
-          NoiceCmdlinePopupBorder = { bg = "none", fg = theme.ui.special },
+          NoiceCmdlinePopupBorder = { bg = "none", fg = theme.ui.special, bold = true },
           -- depth 1
           RainbowDelimiterRed = { fg = default.sakuraPink, bold = true },
           -- depth 2
@@ -44,13 +44,6 @@ return {
           RainbowDelimiterOrange = { fg = default.springViolet1, bold = true },
           -- depth 7
           RainbowDelimiterViolet = { fg = default.sakuraPink, bold = true },
---          RainbowDelimiterBlue = { bold = true },
---          RainbowDelimiterCyan = { bold = true },
---          RainbowDelimiterGreen = { bold = true },
---          RainbowDelimiterOrange = { bold = true },
---          RainbowDelimiterRed = { fg = theme.syn.number, bold = true },
---          RainbowDelimiterViolet = { bold = true },
---          RainbowDelimiterYellow = { fg = theme.syn.string, bold = true },
           TelescopeTitle = { fg = theme.syn.number, bold = true },
           TelescopePromptPrefix = { fg = theme.syn.string },
           TelescopeSelection = { bg = theme.ui.bg_search },
